@@ -11,12 +11,12 @@ namespace API_COMP2001.Models
 {
     public class DataAccess : DbContext
     {
-        private readonly string _connection;
+        private readonly string connect;
         public DbSet<Programme> Programmes { get; set; }
 
         public DataAccess(DbContextOptions<DataAccess> options) : base(options)
         {
-            _connection = Database.GetConnectionString();
+            connect = Database.GetConnectionString();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,13 +34,29 @@ namespace API_COMP2001.Models
             });
         }
 
+        public void Update(Programme prm, int Code)
+        {
+            using (SqlConnection sql = new SqlConnection(connect))
+            {
+                using (SqlCommand cmd = new SqlCommand("CW2.Update_Programme", sql))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@Programme_Code", Code));
+                    cmd.Parameters.Add(new SqlParameter("@Title", prm.Title));
+                    sql.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
         public void Delete(int Code)
         {
-            using (SqlConnection sql = new SqlConnection(_connection))
+            using (SqlConnection sql = new SqlConnection(connect))
             {
                 using (SqlCommand cmd = new SqlCommand("CW2.Delete_Programme", sql))
                 {
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Programme_Code", Code));
 
                     sql.Open();

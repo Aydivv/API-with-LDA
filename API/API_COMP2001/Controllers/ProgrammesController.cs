@@ -39,6 +39,14 @@ namespace API_COMP2001.Controllers
 
             return _request;
         }
+        //Update Programme
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] Programme prm)
+        {
+
+            _database.Update(prm, id);
+            return NoContent();
+        }
 
         //Delete Programme
         [HttpDelete("{code}")]
