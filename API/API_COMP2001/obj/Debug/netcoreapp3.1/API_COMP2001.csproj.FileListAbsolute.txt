@@ -129,3 +129,16 @@ C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Deb
 C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\obj\Debug\netcoreapp3.1\API_COMP2001.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\obj\Debug\netcoreapp3.1\API_COMP2001.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\API_COMP2001.deps.json
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\API_COMP2001.runtimeconfig.json
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\API_COMP2001.runtimeconfig.dev.json
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\API_COMP2001.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\API_COMP2001.pdb
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\obj\Debug\netcoreapp3.1\API_COMP2001.dll
+C:\Users\svidya\source\repos\comp2001_assignment-Aydivv\API\API_COMP2001\obj\Debug\netcoreapp3.1\API_COMP2001.pdb
