@@ -39,6 +39,13 @@ namespace API_COMP2001.Controllers
 
             return _request;
         }
+        //Create Programme
+        [HttpPost]
+        public IActionResult Put([FromBody] Programme prm)
+        {
+            _database.Create(prm);
+            return NoContent();
+        }
         //Update Programme
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Programme prm)

@@ -34,6 +34,28 @@ namespace API_COMP2001.Models
             });
         }
 
+        public void Create(Programme prm)
+        {
+            using (SqlConnection sql = new SqlConnection(connect))
+            {
+                using (SqlCommand cmd = new SqlCommand("CW2.Create_Programme", sql))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@Programme_Code", prm.Code));
+                    cmd.Parameters.Add(new SqlParameter("@Title", string.IsNullOrEmpty(prm.Title) ? (object)DBNull.Value : prm.Title));
+                    SqlParameter output = new SqlParameter("@ResponseMessage", SqlDbType.VarChar, 250);
+                    output.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(output);
+                    sql.Open();
+
+                    string sqlresponse;
+                
+                    cmd.ExecuteNonQuery();
+                    sqlresponse = output.Value.ToString();
+                }
+            }
+        }
+
         public void Update(Programme prm, int Code)
         {
             using (SqlConnection sql = new SqlConnection(connect))
