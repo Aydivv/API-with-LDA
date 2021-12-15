@@ -57,16 +57,7 @@ namespace API_COMP2001.Controllers
                 Console.WriteLine(e.StackTrace);
                 return StatusCode(404, new { Description = e.Str });
             }
-            return StatusCode(200,new { ProgrammeCode = prm.Code });
-
-            /*
-             * Try
-             *  create(prm)
-             * catch(208 exception)
-             *  return 208
-             * catch(404 exception)
-             *  return 404
-             * */
+            return StatusCode(201,new { ProgrammeCode = prm.Code });
         }
         //Update Programme
         [HttpPut("{id}")]
