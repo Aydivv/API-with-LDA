@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\svidya\\source\\repos\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj": {}
+    "C:\\Users\\SVidya\\Documents\\GitHub\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj": {}
   },
   "projects": {
-    "C:\\Users\\svidya\\source\\repos\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj": {
+    "C:\\Users\\SVidya\\Documents\\GitHub\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svidya\\source\\repos\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj",
+        "projectUniqueName": "C:\\Users\\SVidya\\Documents\\GitHub\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj",
         "projectName": "API_COMP2001",
-        "projectPath": "C:\\Users\\svidya\\source\\repos\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj",
-        "packagesPath": "C:\\Users\\svidya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svidya\\source\\repos\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\obj\\",
+        "projectPath": "C:\\Users\\SVidya\\Documents\\GitHub\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\API_COMP2001.csproj",
+        "packagesPath": "C:\\Users\\SVidya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SVidya\\Documents\\GitHub\\comp2001_assignment-Aydivv\\API\\API_COMP2001\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\svidya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SVidya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -93,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

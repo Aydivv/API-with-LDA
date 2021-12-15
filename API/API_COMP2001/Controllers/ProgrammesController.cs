@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using API_COMP2001.Models;
 using Microsoft.EntityFrameworkCore;
+using API_COMP2001.Helpers;
 
 namespace API_COMP2001.Controllers
 {
@@ -41,10 +42,31 @@ namespace API_COMP2001.Controllers
         }
         //Create Programme
         [HttpPost]
-        public IActionResult Put([FromBody] Programme prm)
+        public IActionResult Post([FromBody] Programme prm)
         {
-            _database.Create(prm);
-            return NoContent();
+            try
+            {
+                _database.Create(prm);
+            } catch (ProgrammeExistException e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return StatusCode(208, new { Description = e.Str });
+            }
+            catch (TableNotFoundException e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return StatusCode(404, new { Description = e.Str });
+            }
+            return StatusCode(200,new { ProgrammeCode = prm.Code });
+
+            /*
+             * Try
+             *  create(prm)
+             * catch(208 exception)
+             *  return 208
+             * catch(404 exception)
+             *  return 404
+             * */
         }
         //Update Programme
         [HttpPut("{id}")]
@@ -62,5 +84,8 @@ namespace API_COMP2001.Controllers
             _database.Delete(code);
             return NoContent();
         }
-    }
+
+
+        
+}
 }

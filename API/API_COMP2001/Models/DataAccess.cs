@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using API_COMP2001.Helpers;
 
 namespace API_COMP2001.Models
 {
@@ -49,9 +50,14 @@ namespace API_COMP2001.Models
                     sql.Open();
 
                     string sqlresponse;
-                
+
                     cmd.ExecuteNonQuery();
                     sqlresponse = output.Value.ToString();
+
+                    if (String.Equals(sqlresponse,"208"))
+                        throw new ProgrammeExistException("Programme Code already exists.");
+                    else if (String.Equals(sqlresponse, "404"))
+                        throw new TableNotFoundException("Table not found.");
                 }
             }
         }
