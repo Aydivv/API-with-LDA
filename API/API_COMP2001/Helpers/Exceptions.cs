@@ -22,4 +22,14 @@ namespace API_COMP2001.Helpers
             this.Str = v;
         }
     }
+
+    [Serializable]
+    public class ProgrammeNotFoundException : Exception
+    {
+        public string Str;
+        public ProgrammeNotFoundException(string v)
+        {
+            this.Str = v;
+        }
+    }
 }

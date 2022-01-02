@@ -55,7 +55,7 @@ namespace API_COMP2001.Models
                     sqlresponse = output.Value.ToString();
 
                     if (String.Equals(sqlresponse,"208"))
-                        throw new ProgrammeExistException("Programme Code already exists.");
+                        throw new ProgrammeExistException("Call successful, but Programme already exists and so new entry not made.");
                     else if (String.Equals(sqlresponse, "404"))
                         throw new TableNotFoundException("Table not found.");
                 }
@@ -72,7 +72,15 @@ namespace API_COMP2001.Models
                     cmd.Parameters.Add(new SqlParameter("@Programme_Code", Code));
                     cmd.Parameters.Add(new SqlParameter("@Title", prm.Title));
                     sql.Open();
-                    cmd.ExecuteNonQuery();
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        throw new ProgrammeNotFoundException("Programme does not exist.");
+                    }
                 }
             }
         }
@@ -89,7 +97,14 @@ namespace API_COMP2001.Models
 
                     sql.Open();
 
-                    cmd.ExecuteNonQuery();
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        throw new ProgrammeNotFoundException("Programme does not exist.");
+                    }
                 }
             }
         }

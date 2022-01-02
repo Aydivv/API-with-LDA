@@ -60,20 +60,33 @@ namespace API_COMP2001.Controllers
             return StatusCode(201,new { ProgrammeCode = prm.Code });
         }
         //Update Programme
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Programme prm)
+        [HttpPut("{code}")]
+        public IActionResult Put(int code, [FromBody] Programme prm)
         {
 
-            _database.Update(prm, id);
-            return NoContent();
+            try
+            {
+                _database.Update(prm, code);
+            } catch (ProgrammeNotFoundException e)
+            {
+                return StatusCode(404, new { Description = e.Str });
+            }
+            return StatusCode(204, new { Description = "Success" });
         }
 
         //Delete Programme
         [HttpDelete("{code}")]
         public IActionResult Delete(int code)
         {
-            _database.Delete(code);
-            return NoContent();
+            try
+            {
+                _database.Delete(code);
+            }
+            catch (ProgrammeNotFoundException e)
+            {
+                return StatusCode(404, new { Description = e.Str });
+            }
+            return StatusCode(204, new { Description = "Success" });
         }
 
 
