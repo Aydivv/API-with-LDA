@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #5F4330;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.footer {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.contenta {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-family: "Arial Black", sans-serif;
+}
+
+.contenta p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.contenta p2 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: black;
+    font-size: 26px;
+}
+
+.contenta h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-family: "Arial Black", sans-serif;
+}
+
+.container {
+    background: white;
+    width: 100%;
+}
+
+.title {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.border {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.tables {
+    width: 100%;
+}
+
+.tables th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+td {
+    height: 30px;
+    vertical-align: bottom;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
