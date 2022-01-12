@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: #5F4330;
 }
 
 .navbar {
@@ -19,11 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: black;
+    color: white;
 }
 
 .logo {
-    width: 200px;
+    width: 450px;
     cursor: pointer;
     position: relative;
 }
@@ -37,7 +38,7 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -83,10 +84,11 @@
 }
 
 .content h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 80px;
     text-transform: uppercase;
     font-family: "Arial Black", sans-serif;
+    color: white;
 }
 
 .contenta p {
@@ -120,8 +122,8 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -151,4 +153,28 @@ th, td {
     text-align: center;
     border-bottom: 1px solid #000000;
     border-right: 1px solid #000000;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
