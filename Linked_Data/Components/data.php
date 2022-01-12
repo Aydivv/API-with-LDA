@@ -1,12 +1,25 @@
 <?php
-include_once 'Components/header.php'
-?>
-<html>
 
-<body>
-    <h1>Datapagez</h1>
-</body>
-</html>
-<?php
-include_once 'Components/footer.php'
+include_once 'header.php';
 ?>
+
+    <body>
+    <style>
+        body {
+            background-color: black;
+            background-size: cover;
+        }
+    </style>
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>DATA</h1>
+                <p>This is for those who are interested in Highway Incidents
+                    <br>in Plymouth since April 2017 to July 2017. Data is presented</br>
+                    as both Human-Readable and Machine Readable.
+                </p>
+            </div>
+        </div>
+    </div>
+    </body>
+<?php include_once 'footer.php'; ?>

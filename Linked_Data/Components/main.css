@@ -132,28 +132,6 @@
     padding: 8px;
 }
 
-.tables {
-    width: 100%;
-}
-
-.tables th {
-    position: sticky;
-    top: 0;
-    background-color: black;
-}
-
-td {
-    height: 30px;
-    vertical-align: bottom;
-    text-transform: uppercase;
-}
-
-th, td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-}
 
 a:link {
     color: black;
