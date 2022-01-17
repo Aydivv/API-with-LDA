@@ -12,7 +12,7 @@ class DataAccess{
         if($file){
             $lineCount = 0;
 
-            while($row = fgetcsv($file,1000,'r'))
+            while($row = fgetcsv($file,1000,','))
             {
                 if($lineCount > 0){
                     $visit = new GPvisit($row[0],$row[1],$row[2],$row[3]);
@@ -32,11 +32,10 @@ class DataAccess{
         $LEs = [];
         $rowHeaders = [];
 
-        $file = fopen($filename,'r');
-        if($file){
+        $f = fopen($filename,'r');
+        if($f){
             $lineCount = 0;
-
-            while($row = fgetcsv($file,1000,'r'))
+            while($row = fgetcsv($f,1000,','))
             {
                 if($lineCount > 0){
                     $LE = new LifeExpectancy($row[0],$row[1],$row[2],$row[3],$row[4]);
@@ -46,9 +45,12 @@ class DataAccess{
                 else{
                     $rowHeaders = $row;
                     $lineCount++;
+
+
                 }
             }
         }
+        fclose($f);
         return $LEs;
     }
 }

@@ -1,26 +1,51 @@
-<?php
-
-include_once 'header.php';
-?>
-
+<div class="bg">
+    <?php
+    include_once 'header.php';
+    ?>
     <body>
     <style>
-        body {
-            background-image: url("wall.jpg");
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            background-image: url("img/wall.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
             background-size: cover;
         }
     </style>
     <div class="content">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>WELCOME</h1>
-                <p>This is for those who are interested in Highway Incidents
-                    <br>in Plymouth since April 2017 to July 2017. Data is presented</br>
-                    as both Human-Readable and Machine Readable.
-                </p>
-            </div>
+        <div>
+            <h1>WELCOME</h1>
+            <p>Everyone wants to live longer and this website will tell you how you can live past your life expectancy.
+                <br>This website uses two datasets with three csv files.
+                <br>You can find them below:
+                <br><a href="https://plymouth.thedata.place/dataset/life-expectancy-plymouth"><u>Life Expectancy in Plymouth</u></a>
+                <br><a href="https://plymouth.thedata.place/dataset/gender-age-all-visits-plymouth/resource/1b95bf56-00e6-4ea5-aa5f-13d6d0decf5a"><u>Visits to the GP</u></a>
+
+            </p>
         </div>
     </div>
-    </body>
-<?php include_once 'footer.php'; ?>
+    <style>
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            font-size: 10px;
+            text-transform: capitalize;
+        }
+    </style>
+    <div class='footer'>
+        <span>Copyright © 2022 School of Engineering, Computing & Mathematics with University of Plymouth. All rights reserved.</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
 
