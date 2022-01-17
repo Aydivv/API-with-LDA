@@ -13,7 +13,7 @@ if(!isset($getter)){
 
     <style>
         body {
-            background-color: black;
+            background-image: url('img/wall2.jpg');
             background-size: cover;
         }
         h1{
@@ -23,9 +23,10 @@ if(!isset($getter)){
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Introduction</h2>
+                <h2><strong>Introduction</strong></h2>
                 <br>
-                <p>Most people know that women generally live longer than men. Is that just a saying or is it proven by stats? Let's find out by using data from the city of Plymouth.</p>
+                <p>Most people know that women generally live longer than men. Is that just a saying or is it proven by stats?
+                    If it is true, what do women do differently that allows them to live longer? Let's find out by using data from the city of Plymouth.</p>
             </div>
         </div>
         <div class="row">
@@ -44,13 +45,29 @@ if(!isset($getter)){
             </div>
         </div>
         <div class="row">
-            <h2>Male Life Expectancy</h2>
+            <p>Here we can see that during the time when humans start to get independent and start to take care of themselves (Age 15-24) women go to the GP a lot more than men. This means they
+            take care of their body and go get help when it needs help but men on the other hand do not go to the GP and as a result have to go to the GP a lot more often later in life(Age 75-90). This
+            also leads to them having a lower life expectancy.</p>
+        </div>
+        <div class="row  tablerow">
+            <h2><strong>Conclusion</strong></h2>
+            <p>
+                There it is. Want to live longer? Just go to the GP more often, listen to your body and take care of your body. Simple as that.
+            </p>
+            <br>
+
+            <p>Disclaimer: I do not claim this is right, I know correlation does not mean cause. This is just for fun.</p>
+            <br>
+            <p>The raw data used for these graphs can be found below.</p>
         </div>
         <div class="row">
+            <h2><strong>Male Life Expectancy</strong></h2>
+        </div>
+        <div class="row  tablerow">
             <div class="col">
-                <table class="table">
-                    <thead>
-                    <tr class="table-dark">
+                <table class="table border">
+                    <thead class="thead-light bg-light">
+                    <tr>
                         <th>Ward Code</th>
                         <th>Wards</th>
                         <th>Life Expectancy</th>
@@ -67,7 +84,7 @@ if(!isset($getter)){
                     {
                         foreach($LEs as $row)
                         {
-                            $HTML .= '<tr class="table-dark">';
+                            $HTML .= '<tr class="thead-dark" style="color: white;">';
                             $HTML .= "<td>".$row->getWardCode()."</td>";
                             $HTML .= "<td>".$row->getWards()."</td>";
                             $HTML .= "<td>".$row->getLE()."</td>";
@@ -84,13 +101,13 @@ if(!isset($getter)){
             </div>
         </div>
         <div class="row">
-            <h2>Female Life Expectancy</h2>
+            <h2><strong>Female Life Expectancy</strong></h2>
         </div>
-        <div class="row">
+        <div class="row tablerow">
             <div class="col">
-                <table class="table">
-                    <thead>
-                    <tr class="table-dark">
+                <table class="table border">
+                    <thead class="thead-light bg-light">
+                    <tr>
                         <th>Ward Code</th>
                         <th>Wards</th>
                         <th>Life Expectancy</th>
@@ -109,7 +126,7 @@ if(!isset($getter)){
 
                         foreach($LEs as $row)
                         {
-                            $HTML .= '<tr class="table-dark">';
+                            $HTML .= '<tr class="thead-dark" style="color: white;">';
                             $HTML .= "<td>".$row->getWardCode()."</td>";
                             $HTML .= "<td>".$row->getWards()."</td>";
                             $HTML .= "<td>".$row->getLE()."</td>";
@@ -127,13 +144,13 @@ if(!isset($getter)){
             </div>
         </div>
         <div class="row">
-            <h2>GP Visits</h2>
+            <h2><strong>GP Visits</strong></h2>
         </div>
-        <div class="row">
+        <div class="row  tablerow">
             <div class="col">
-                <table class="table">
-                    <thead>
-                    <tr class="table-dark">
+                <table class="table border">
+                    <thead class="thead-light bg-light">
+                    <tr>
                         <th> Age Group </th>
                         <th> Female </th>
                         <th> Male </th>
@@ -151,7 +168,7 @@ if(!isset($getter)){
                     {
                         foreach($visits as $row)
                         {
-                            $HTML .= '<tr class="table-dark">';
+                            $HTML .= '<tr class="thead-dark" style="color: white;">';
                             $HTML .= "<td>".$row->getAgeGroup()."</td>";
                             $HTML .= "<td>".$row->getFemale()."</td>";
                             $HTML .= "<td>".$row->getMale()."</td>";

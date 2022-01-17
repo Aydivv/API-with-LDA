@@ -19,13 +19,17 @@
     <div class="content">
         <div>
             <h1>WELCOME</h1>
-            <p>Everyone wants to live longer and this website will tell you how you can live past your life expectancy.
+            <p><strong>Everyone wants to know how to live longer.</strong>
+                <br> The purpose of this website is to find out how we can live past our life expectancy.
+                <br>I used datasets about people in plymouth to figure out what affects
+                <br>life expectancy and why some people live longer than others.</p>
+            <p>
                 <br>This website uses two datasets with three csv files.
                 <br>You can find them below:
                 <br><a href="https://plymouth.thedata.place/dataset/life-expectancy-plymouth"><u>Life Expectancy in Plymouth</u></a>
                 <br><a href="https://plymouth.thedata.place/dataset/gender-age-all-visits-plymouth/resource/1b95bf56-00e6-4ea5-aa5f-13d6d0decf5a"><u>Visits to the GP</u></a>
-
             </p>
+
         </div>
     </div>
     <style>
@@ -34,10 +38,9 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            font-size: 10px;
             color: white;
             text-align: center;
-            font-size: 10px;
+            font-size: 15px;
             text-transform: capitalize;
         }
     </style>

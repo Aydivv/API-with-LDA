@@ -13,13 +13,13 @@
 <body>
 <div class="banner">
     <div class="navbar">
-        <img src="img/logo.png" class="logo" />
+        <a href="index.php"><img src="img/logo.png" class="logo" /></a>
         <ul>
             <li><a class='btn' href="index.php"">home</a></li>
             <li><a class='btn' href="data.php">Data</a></li>
             <div class="dropdown">
                 <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" style="font-size: 20px">
-                    Machine Readable
+                    JSON-LD RDF Data
                 </button>
                 <ul class="dropdown-menu bg-dark">
                     <li><a class="dropdown-item" href="#">GP visits</a></li>

@@ -7,11 +7,9 @@
         left: 0;
         bottom: 0;
         width: 100%;
-
-        font-size: 10px;
         color: white;
         text-align: center;
-        font-size: 10px;
+        font-size: 15px;
         text-transform: capitalize;
     }
 </style>

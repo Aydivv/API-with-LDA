@@ -74,10 +74,6 @@
     text-transform: uppercase;
 }
 
-.border {
-    border: 2px solid black;
-    padding: 8px;
-}
 
 a:link {
     color: black;
@@ -111,5 +107,17 @@ a:active {
 .row p{
     color: white;
     text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
+
+.table{
+    font-size:19px;
+}
+
+.tablerow{
+    padding-bottom: 60px;
 }
 
