@@ -103,3 +103,13 @@ a:active {
     text-decoration: none;
 }
 
+.row h2{
+    color: white;
+    text-align: center;
+}
+
+.row p{
+    color: white;
+    text-align: center;
+}
+
