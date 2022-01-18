@@ -56,7 +56,7 @@ if(!isset($getter)){
             </p>
             <br>
 
-            <p>Disclaimer: I do not claim this is right, I know correlation does not mean cause. This is just for fun.</p>
+            <p>You can read more about this <a href="https://ourworldindata.org/why-do-women-live-longer-than-men"><u>here</u></a>.</p>
             <br>
             <p>The raw data used for these graphs can be found below.</p>
         </div>

@@ -17,16 +17,7 @@
         <ul>
             <li><a class='btn' href="index.php"">home</a></li>
             <li><a class='btn' href="data.php">Data</a></li>
-            <div class="dropdown">
-                <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" style="font-size: 20px">
-                    JSON-LD RDF Data
-                </button>
-                <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item" href="#">GP visits</a></li>
-                    <li><a class="dropdown-item" href="#">Female Life Expectancy</a></li>
-                    <li><a class="dropdown-item" href="#">Male Life Expectancy</a></li>
-                </ul>
-            </div>
+            <li><a class="btn" href="../LifeExpectancy">Life Expectancy RDF</a></li>
         </ul>
     </div>
 </div>

@@ -76,7 +76,7 @@
 
 
 a:link {
-    color: black;
+    color: cyan;
     background-color: transparent;
     text-decoration: none;
 }
@@ -88,13 +88,13 @@ a:visited {
 }
 
 a:hover {
-    color: black;
+    color: cyan;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:active {
-    color: black;
+    color: cyan;
     background-color: transparent;
     text-decoration: none;
 }
