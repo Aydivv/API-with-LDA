@@ -14,13 +14,13 @@
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     color: aliceblue;
 }
 
 .logo {
-    width: 450px;
+    width: 300px;
     cursor: pointer;
     position: relative;
 }
@@ -39,10 +39,21 @@
     font-size: 20px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
 }
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
 
 .content {
     width: 100%;
@@ -110,7 +121,7 @@ a:active {
 }
 
 p{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .table{

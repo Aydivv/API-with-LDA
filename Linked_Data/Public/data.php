@@ -25,8 +25,8 @@ if(!isset($getter)){
             <div class="col">
                 <h2><strong>Introduction</strong></h2>
                 <br>
-                <p>Most people know that women generally live longer than men. Is that just a saying or is it proven by stats?
-                    If it is true, what do women do differently that allows them to live longer? Let's find out by using data from the city of Plymouth.</p>
+                <p>Most people know that women generally live longer than men. Is that just a saying or is it proven by statistics?
+                    If it is true, what do women do differently that leads to them having a longer lifespan? Let's find out by using data from the city of Plymouth.</p>
             </div>
         </div>
         <div class="row">
@@ -35,9 +35,9 @@ if(!isset($getter)){
             </div>
         </div>
         <div class="row">
-            <p>As we can see, the average woman in Plymouth lives 4 years longer than the average man. That is a very long period of time. Now what I wanted to find out is why is that? There could be many reasons. It could be due to
-            differences in physical health, the ability to take care of oneself or it could also be mental health. The most logical reason is probably physical health. I could not find a direct metric about physical health in Plymouth with regards to gender, but I did find
-            data on how many times a year people go to their GP and I found something very interesting. Let's look at the data.</p>
+            <p>As we can see, the average woman in Plymouth lives 4 years longer than the average man. That is a very long period of time. This can be attributed to several reasons. It could be due to
+            differences in physical health, the ability to take care of oneself or it could also be mental health. The most logical reason is probably physical health. A direct metric about physical health in Plymouth with regards to gender could not be found, however something that is very interesting is
+            the data on how many times a year people go to their GP.</p>
         </div>
         <div class="row">
             <div class="col">
@@ -45,9 +45,10 @@ if(!isset($getter)){
             </div>
         </div>
         <div class="row">
-            <p>Here we can see that during the time when humans start to get independent and start to take care of themselves (Age 15-24) women go to the GP a lot more than men. This means they
-            take care of their body and go get help when it needs help but men on the other hand do not go to the GP and as a result have to go to the GP a lot more often later in life(Age 75-90). This
-            also leads to them having a lower life expectancy.</p>
+            <p>From observing the above graph, it is clear that Females start to seek more medical help than males once they reach adolosnce. This is not because females
+                need more medical attention than males, but simply because men associate seeking help with weakness, as they are conditioned to do so from early childhood.
+                Males overtake females in seeking medical help at the age of 75-90 which means they only seek help when they desperately have to;
+                but as prevention is better than cure, this trend in the males might cause them to have a shorter life span than their female counterparts.</p>
         </div>
         <div class="row  tablerow">
             <h2><strong>Conclusion</strong></h2>

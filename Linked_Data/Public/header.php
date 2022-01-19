@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="../Public/css/main.css"/>
 </head>
 <body>
+<div class="container">
+    <div class="row">
 <div class="banner">
     <div class="navbar">
-        <a href="index.php"><img src="img/logo.png" class="logo" /></a>
+        <a href="index.php" style="font-size: 30px"><strong>Secret to Life</strong></a>
         <ul>
-            <li><a class='btn' href="index.php"">Home</a></li>
-            <li><a class='btn' href="data.php">Data</a></li>
-            <li><a class="btn" href="../LifeExpectancy">Wards with Life Expectancy RDF</a></li>
+            <li><a  href="index.php"">Home</a></li>
+            <li><a  href="data.php">Data</a></li>
+            <li><a  href="../LifeExpectancy">Wards with Life Expectancy RDF</a></li>
         </ul>
+    </div>
+</div>
     </div>
 </div>
 </html>

@@ -3,13 +3,13 @@
 
 <style>
     .footer{
-        position: relative;
+        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 15px;
+        font-size: 10px;
         text-transform: capitalize;
     }
 </style>
