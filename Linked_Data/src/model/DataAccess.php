@@ -3,23 +3,23 @@
 include_once 'GPvisit.php';
 include_once 'LifeExpectancy.php';
 
-class DataAccess{
-    public function getVisits(){
+class DataAccess
+{
+    public function getVisits()
+    {
         $visits = [];
         $rowHeaders = [];
 
-        $file = fopen('../data/GPvisits.csv','r');
-        if($file){
+        $file = fopen('../data/GPvisits.csv', 'r');
+        if ($file) {
             $lineCount = 0;
 
-            while($row = fgetcsv($file,1000,','))
-            {
-                if($lineCount > 0){
-                    $visit = new GPvisit($row[0],$row[1],$row[2],$row[3]);
+            while ($row = fgetcsv($file, 1000, ',')) {
+                if ($lineCount > 0) {
+                    $visit = new GPvisit($row[0], $row[1], $row[2], $row[3]);
                     $visits[] = $visit;
                     $lineCount++;
-                }
-                else{
+                } else {
                     $rowHeaders = $row;
                     $lineCount++;
                 }
@@ -28,21 +28,20 @@ class DataAccess{
         return $visits;
     }
 
-    public function getLE($filename){
+    public function getLE($filename)
+    {
         $LEs = [];
         $rowHeaders = [];
 
-        $f = fopen($filename,'r');
-        if($f){
+        $f = fopen($filename, 'r');
+        if ($f) {
             $lineCount = 0;
-            while($row = fgetcsv($f,1000,','))
-            {
-                if($lineCount > 0){
-                    $LE = new LifeExpectancy($row[0],$row[1],$row[2],$row[3],$row[4]);
+            while ($row = fgetcsv($f, 1000, ',')) {
+                if ($lineCount > 0) {
+                    $LE = new LifeExpectancy($row[0], $row[1], $row[2], $row[3], $row[4]);
                     $LEs[] = $LE;
                     $lineCount++;
-                }
-                else{
+                } else {
                     $rowHeaders = $row;
                     $lineCount++;
 

@@ -8,8 +8,9 @@
             background-image: url('img/wallpaperindex.jpg');
             background-size: cover;
         }
-        h1{
-            color:aliceblue;
+
+        h1 {
+            color: aliceblue;
         }
     </style>
 
@@ -23,14 +24,17 @@
             <p>
                 <br>This website uses two datasets with three csv files.
                 <br>You can find them below:
-                <br><a href="https://plymouth.thedata.place/dataset/life-expectancy-plymouth"><u>Life Expectancy in Plymouth</u></a>
-                <br><a href="https://plymouth.thedata.place/dataset/gender-age-all-visits-plymouth/resource/1b95bf56-00e6-4ea5-aa5f-13d6d0decf5a"><u>Visits to the GP</u></a>
+                <br><a href="https://plymouth.thedata.place/dataset/life-expectancy-plymouth"><u>Life Expectancy in
+                        Plymouth</u></a>
+                <br><a href="https://plymouth.thedata.place/dataset/gender-age-all-visits-plymouth/resource/1b95bf56-00e6-4ea5-aa5f-13d6d0decf5a"><u>Visits
+                        to the GP</u></a>
             </p>
-            <p style="padding-bottom: 80px">For use in machine to machine communication you can find the JSON-LD RDF formatted data <a href="../Wards"><u>here</u></a>.</p>
-    </div>
+            <p style="padding-bottom: 80px">For use in machine to machine communication you can find the JSON-LD RDF
+                formatted data <a href="../Wards"><u>here</u></a>.</p>
+        </div>
 
-<?php
-include_once 'footer.php' ?>
+        <?php
+        include_once 'footer.php' ?>
 
 
 
