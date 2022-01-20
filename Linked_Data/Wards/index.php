@@ -26,10 +26,9 @@ if($totalLE)
 }
 else{
 
-    // set response code - 404 Not found
+   
     http_response_code(404);
 
-    // tell the user no products found
     echo json_encode(
         array("response" => "No data found.")
     );
@@ -44,9 +43,7 @@ function getSemanticMarkup($data){
         { "@type" : "Place",
                 "name" : "'.$LE->getWards().'",
                 "identifier" : "'.$LE->getWardCode().'",
-                "LE:lifeExpectancy" : "'.$LE->getLE().'",
-                "LE:lowerConfidenceLimit" : "'.$LE->getLCL().'",
-                "LE:upperConfidenceLimit" : "'.$LE->getUCL().'"
+                "LE:lifeExpectancy" : "'.$LE->getLE().'"
                 },';
     }
     $result = substr($result, 0, -1);

@@ -19,7 +19,7 @@
         <ul>
             <li><a  href="index.php"">Home</a></li>
             <li><a  href="data.php">Data</a></li>
-            <li><a  href="../LifeExpectancy">Wards with Life Expectancy RDF</a></li>
+            <li><a  href="../Wards">Wards with Life Expectancy RDF</a></li>
         </ul>
     </div>
 </div>
