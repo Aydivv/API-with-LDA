@@ -9,7 +9,7 @@ CREATE TABLE cw2.Students (
 
 CREATE TABLE cw2.Programmes (
   programmeCode INT PRIMARY KEY,
-  title varchar(100)
+  title varchar(100) NOT NULL
 );
 
 CREATE TABLE cw2.Projects (
@@ -35,9 +35,9 @@ CREATE TABLE cw2.StudentProgramme (
 );
 
 CREATE TABLE cw2.auditProgrammes (
-  programmeCode INT,
-  title VARCHAR(100),
-  [time of update] VARCHAR(100),
+  programmeCode INT NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  [time of update] VARCHAR(100) NOT NULL,
 );
 
 /*Inserting Dummy Data*/
@@ -64,8 +64,7 @@ INSERT INTO CW2.StudentProject VALUES
 (3,3);
 
 INSERT INTO CW2.StudentProgramme VALUES
-(2,200,1)
-(1,100,1),
+(1,200,1),
 (2,200,1),
 (3,300,1);
 
@@ -239,4 +238,3 @@ BEGIN
         PRINT 'Student already in another programme.'
     END
 END
-
