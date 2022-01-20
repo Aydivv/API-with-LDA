@@ -229,12 +229,22 @@ CREATE TRIGGER CW2.checkCurrentStudent ON CW2.StudentProgramme
 AFTER INSERT
 AS 
 BEGIN
-    IF (SELECT COUNT(*) FROM CW2.StudentProgramme SP,inserted I WHERE SP.studentID = I.studentID AND SP.currentStudent = 1 ) > 1
-    BEGIN 
-        DECLARE @iStudentID INT;
-        DECLARE @iProgrammeCode INT;
-        SELECT @iStudentID = inserted.studentID, @iProgrammeCode = inserted.programmeCode FROM inserted;
-        DELETE FROM CW2.StudentProgramme WHERE programmeCode = @iProgrammeCode and studentID = @iStudentID;
-        PRINT 'Student already in another programme.'
+    BEGIN TRANSACTION
+        BEGIN TRY
+            IF (SELECT COUNT(*) FROM CW2.StudentProgramme SP,inserted I WHERE SP.studentID = I.studentID AND SP.currentStudent = 1 ) > 1
+            BEGIN 
+                DECLARE @iStudentID INT;
+                DECLARE @iProgrammeCode INT;
+                SELECT @iStudentID = inserted.studentID, @iProgrammeCode = inserted.programmeCode FROM inserted;
+                DELETE FROM CW2.StudentProgramme WHERE programmeCode = @iProgrammeCode and studentID = @iStudentID;
+                PRINT 'Student already in another programme.'
+                COMMIT;
+            END
+        END TRY
+        BEGIN CATCH
+            PRINT 'An error has occurred.'
+            ROLLBACK
+            RAISERROR(@Error,1,1);
+        END CATCH
     END
 END
