@@ -1,22 +1,25 @@
-# COMP2001_template
-A template repo for use for the COMP2001 Information Management &amp; Retrieval Module
+#  COMP 2001 Coursework
+## Part 1 - Showcase RESTful API
+The API folder includes SQL queries used in Microsoft SQL Server and the code used to develop the API in C# and ASP.NET.
 
-## Part 1
-Part 1 of the coursework is to create a RESTful API as per the specification found in the Assignment Brief.  The code for this part is to be found in the API folder of the repository.  The API is to be hosted on the web.socem server - in the student/API folder provided for the module.  The API is written using .NET and links to a Microsoft SQL Server database hosted on the University infrastructure.
+[Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/what-is-azure-data-studio?view=sql-server-ver15) and [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) were used to create this application. [Postman](https://www.postman.com/) was used to test the application.
 
-The API is a representation of machine to machine communication and the endpoints are as per the swagger file provided for the module.  
+The API is hosted on http://web.socem.plymouth.ac.uk/comp2001/SVidya/showcase/programmes
 
-## Part 2
-Part 2 of the coursework is to create a Linked Data application based on a chosen dataset from the [Data Place Plymouth](https://plymouth.thedata.place/dataset) initiative.  The code for this is to be found in the Linked_Data folder.  The application is coded in PHP and is hosted on the web.socem server - in the student/public folder provided for this module.
+## Part 2 - Linked Data Application
+The linked data folder contains all the PHP files used to create the application. The application was made with PHP, HTML, CSS and JavaScript with some external libraries like Bootstrap and ChartJS. Bootstrap was used to make interface responsive and ChartJS was used to create graphs in the data page.
 
-The application has three pages:
+The [PHPStorm IDE](https://www.jetbrains.com/phpstorm/) was used to create this application. The [JSON-LD Playground](https://json-ld.org/playground/) was used to test the RDF output.
 
-**index.php**, which displays a link to the original data set, a link to the data.php page, a link to the resource directory with the JSON-LD output, and finally, the project vision.
+The Linked Data Application is hosted on http://web.socem.plymouth.ac.uk/comp2001/svidya.
+The JSON-LD RDF formatted entity can be found at http://web.socem.plymouth.ac.uk/comp2001/svidya/Wards/.
 
-**data.php**, which displays the JSON data in a human readable format (in this case, an HTML table, and an optional modern card-based layout).
-
-**resource name**, which simply outputs the JSON data in a JSON-LD format. Both browsers and REST clients can use a GET request to fetch the data.  The resource name itself will depend on the data set chosen.
-
-## Credits
-Plymouth DATA Place: https://plymouth.thedata.place/dataset
-
+## Libraries and Assets used
+| Libraries/Assets | Links |
+|--|--|
+| Wallpaper for Index Page | https://unsplash.com/photos/3s85IxVDyXE |
+| Wallpaper for Data Page | https://unsplash.com/photos/5lRRpJ4X0HM |
+| Bootstrap 5 | https://getbootstrap.com/ |
+| ChartJS | https://www.chartjs.org/ |
+| Life Expectancy data source | https://plymouth.thedata.place/dataset/life-expectancy-plymouth |
+| GPVisits data source | https://plymouth.thedata.place/dataset/gender-age-all-visits-plymouth/resource/1b95bf56-00e6-4ea5-aa5f-13d6d0decf5a |
