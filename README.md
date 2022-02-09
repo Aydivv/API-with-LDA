@@ -8,7 +8,8 @@ The API is hosted on http://web.socem.plymouth.ac.uk/comp2001/SVidya/showcase/pr
 # Linked Data Application
 The linked data folder contains all the PHP files used to create the application. The application was made with PHP, HTML, CSS and JavaScript with some external libraries like Bootstrap and ChartJS. Bootstrap was used to make interface responsive and ChartJS was used to create graphs in the data page.
 
-The [PHPStorm IDE](https://www.jetbrains.com/phpstorm/) was used to create this application. The [JSON-LD Playground](https://json-ld.org/playground/) was used to test the RDF output.
+The [PHPStorm IDE](https://www.jetbrains.com/phpstorm/) was used to create this application. 
+The [JSON-LD Playground](https://json-ld.org/playground/) was used to test the RDF output.
 
 The Linked Data Application is hosted on http://web.socem.plymouth.ac.uk/comp2001/svidya.
 The JSON-LD RDF formatted entity can be found at http://web.socem.plymouth.ac.uk/comp2001/svidya/Wards/.
